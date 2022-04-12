@@ -1,0 +1,70 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+
+
+///////////////////first-screen
+.first-screen {
+    background: url("/images/backgrounds/main.png");
+    padding-top: 230px;
+    padding-bottom: 250px;
+    height: 100vh;
+}
+
+.first-screen-wrapper {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    &::before {
+        content: '';
+        height: 100%;
+        z-index: -1;
+        width: 100%;
+        width: 654px;
+        height: 654px;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        background: linear-gradient(147.64deg, #FFFFFF 13.56%, #F1F1F1 85.54%);
+        position: absolute;
+    }
+    &__logo {
+        max-width: 242px;
+        margin-bottom: 35px;
+    }
+    &__title {
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #82B428;
+        max-width: 403px;
+        margin-bottom: 35px;
+    }
+    &__text {
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 400;
+        max-width: 242px;
+        font-size: 24px;
+        line-height: 110%;
+        color: #2B2422;
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        background: linear-gradient(34.66deg, #BC1822 16.88%, #E53322 76%);
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        width: fit-content;
+        padding: 11px 21px 13px 22px;
+    }
+}
