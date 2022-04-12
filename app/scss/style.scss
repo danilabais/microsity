@@ -11,29 +11,71 @@
 ///////////////////first-screen
 .first-screen {
     background: url("/images/backgrounds/main.png");
+    background-size: cover;
     padding-top: 230px;
     padding-bottom: 250px;
+    position: relative;
     height: 100vh;
+    &__arrow {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        margin-bottom: 26px;
+    }
 }
+.center-help {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    &__circle-white {
+        background: linear-gradient(147.64deg, #FFFFFF 13.56%, #F1F1F1 85.54%);
+        border-radius: 50%;
+        min-width: 664px;
+        min-height: 664px;
+        z-index: -1;
+
+    }
+    &__circle-green {
+        background: red ;
+        min-width: 20px;
+        min-height: 20px;
+        position: absolute;      
+        top: -148px;
+        right: -223px;
+        background: linear-gradient(147.64deg, #C5D210 13.56%, #82B428 85.54%);
+        border-radius: 50%;
+        width: 268px;
+        height: 268px;
+    }
+    &__circle-blue {
+        background: linear-gradient(147.64deg, #8DCEED 13.56%, #2DA3DC 85.54%);
+        min-width: 105px;
+        min-height: 105px;
+        position: absolute;
+        border-radius: 50%;
+        right: -303.3px;
+        top: 110px;
+
+    }
+}
+
 
 .first-screen-wrapper {
     display: flex;
     position: relative;
     z-index: 2;
     flex-direction: column;
-    &::before {
-        content: '';
-        height: 100%;
-        z-index: -1;
-        width: 100%;
-        width: 654px;
-        height: 654px;
-        left: 0;
-        top: 0;
-        border-radius: 50%;
-        background: linear-gradient(147.64deg, #FFFFFF 13.56%, #F1F1F1 85.54%);
-        position: absolute;
-    }
+    max-width: 403px;
+    
+   
+   
     &__logo {
         max-width: 242px;
         margin-bottom: 35px;
@@ -46,14 +88,14 @@
         line-height: 60px;
         text-transform: uppercase;
         color: #82B428;
-        max-width: 403px;
+        
         margin-bottom: 35px;
     }
     &__text {
         font-family: 'Geometria';
         font-style: normal;
         font-weight: 400;
-        max-width: 242px;
+        
         font-size: 24px;
         line-height: 110%;
         color: #2B2422;
@@ -65,6 +107,15 @@
         box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         width: fit-content;
+        cursor: pointer;
+        color: #fff;
         padding: 11px 21px 13px 22px;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
+    
 }
+
+///////////////////second-screen
