@@ -16,13 +16,30 @@
     padding-bottom: 250px;
     position: relative;
     height: 100vh;
+    margin-bottom: 103px;
     &__arrow {
         position: absolute;
         width: 100%;
         display: flex;
         justify-content: center;
-        bottom: 0;
+        bottom: 20px;
         margin-bottom: 26px;
+        img {
+            animation: scroll 1.4s ease-out infinite;
+            transform: translateY(-20px);
+            
+        }
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 }
 .center-help {
@@ -107,6 +124,7 @@
         box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         width: fit-content;
+        border: none;
         cursor: pointer;
         color: #fff;
         padding: 11px 21px 13px 22px;
@@ -116,6 +134,48 @@
         }
     }
     
+    
 }
 
 ///////////////////second-screen
+
+
+.to-new {
+    margin-bottom: 104px;
+    &__wrapper-left {
+        flex: 0 1 419px;
+        margin-right: 58px;
+    }
+
+    &__title {
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #82B428;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #2B2422;
+        &.first {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__wrapper-right {
+        flex: 0 1 635px;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+}

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -13,32 +14,59 @@
   <header class="header"></header>
   <div class="wrapper">
     <main class="main">
-     
-        <section class="first-screen" style="font-family: Geometria;">
-          <div class="container">
-            <div class="first-screen-wrapper">
-              <div class="first-screen-wrapper__logo">
-                <img src="/images/icons/logo.svg" alt="">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <section class="swiper-slide first-screen" style="font-family: Geometria;">
+            <div class="container">
+              <div class="first-screen-wrapper">
+                <div class="first-screen-wrapper__logo">
+                  <img src="/images/icons/logo.svg" alt="">
+                </div>
+                <h1 class="first-screen-wrapper__title">
+                  Встречайте новые яркие кварталЫ!
+                </h1>
+                <p class="first-screen-wrapper__text">
+                  Здесь так же душевно и уютно, как в старом добром «Ярком», но ещё лучше, современнее и интереснее.
+                </p>
+                <button href="#" class="first-screen-wrapper__btn">
+                  Посмотреть квартиры
+                </button>
+                <div class="center-help">
+                  <div class="center-help__circle-white"></div>
+                </div>
+                <div class="center-help__circle-green"></div>
+                <div class="center-help__circle-blue"></div>
               </div>
-              <h1 class="first-screen-wrapper__title">
-                Встречайте новые яркие кварталЫ!
-              </h1>
-              <p class="first-screen-wrapper__text">
-                Здесь так же душевно и уютно, как в старом добром «Ярком», но ещё лучше, современнее и интереснее.
-              </p>
-              <a href="#" class="first-screen-wrapper__btn">
-                Посмотреть квартиры
+            </div>
+           <div class="first-screen__arrow">
+              <a href="#toToNew">
+               <img class="btn" src="/images/icons/arrow.svg" alt="">
               </a>
-              <div class="center-help">
-                <div class="center-help__circle-white"></div>
+           </div>
+          </section>
+
+        </div>
+      </div>
+
+        <section class="to-new" id="toToNew">
+          <div class="container">
+            <div class="wrapper">
+              <div class="to-new__wrapper-left">
+                <h2 class="to-new__title">
+                  Из «Яркого» в новый «Яркий»!
+                </h2>
+                <p class="to-new__text first">
+                  Расширяйтесь, не покидая наш уютный микрогород. Переезжайте в новые кварталы «Яркого»!
+                </p>
+                <p class="to-new__text">
+                  Это удобно: детям не нужно менять школу и садик, вам — менять свои привычки. Старые друзья остаются с вами, а центр Уфы по-прежнему рядом.
+                </p>
               </div>
-              <div class="center-help__circle-green"></div>
-              <div class="center-help__circle-blue"></div>
+              <div class="to-new__wrapper-right">
+                <img src="/images/from-a-height.png" alt="">
+              </div>
             </div>
           </div>
-         <div class="first-screen__arrow">
-           <img class="btn" src="/images/icons/arrow.svg" alt="">
-         </div>
         </section>
         
 
@@ -54,7 +82,7 @@
   </div>
 
 
-
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
