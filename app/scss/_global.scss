@@ -3,9 +3,17 @@ body {
 	height: 100%;
 	font-weight: 400;
 	scroll-behavior: smooth;
+	font-size: 16rem;
+	font-family: 'Geometria';
+	overflow-x: hidden;
+	
+}
+:root {
+	font-size: 1px;
+
 }
 
-.wrapper {
+.wrapp {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -19,9 +27,9 @@ body {
 }
 
 .container{
-  max-width: 1140px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 35px;
 }
 
 

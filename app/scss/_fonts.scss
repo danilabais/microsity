@@ -26,3 +26,10 @@
 	src: local('Geometria'),
 		url('/fonts/geometria-font/Geometria-ExtraBold.woff2') format('woff2'), 
 }
+@font-face {
+	font-family: 'Geometria';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Geometria'),
+		url('/fonts/geometria-font/Geometria-italic.woff2') format('woff2'), 
+}

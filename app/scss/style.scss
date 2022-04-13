@@ -11,6 +11,9 @@
 ///////////////////first-screen
 .first-screen {
     background: url("/images/backgrounds/main.png");
+    &.second {
+        background: url("/images/backgrounds/main2.png");
+    }
     background-size: cover;
     padding-top: 230px;
     padding-bottom: 250px;
@@ -101,7 +104,7 @@
         font-family: 'Geometria';
         font-style: normal;
         font-weight: 800;
-        font-size: 48px;
+        font-size: 48rem;
         line-height: 60px;
         text-transform: uppercase;
         color: #82B428;
@@ -113,7 +116,7 @@
         font-style: normal;
         font-weight: 400;
         
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 110%;
         color: #2B2422;
         margin-bottom: 35px;
@@ -129,6 +132,7 @@
         color: #fff;
         padding: 11px 21px 13px 22px;
         transition: all .3s;
+        font-size: 20rem;
         &:hover {
             transform: scale(1.1);
         }
@@ -137,11 +141,12 @@
     
 }
 
-///////////////////second-screen
+///////////////////
 
 
 .to-new {
     margin-bottom: 104px;
+    scroll-margin-top: 100px;
     &__wrapper-left {
         flex: 0 1 419px;
         margin-right: 58px;
@@ -151,7 +156,8 @@
         font-family: 'Geometria';
         font-style: normal;
         font-weight: 800;
-        font-size: 36px;
+        font-size: 36rem;
+        max-width: 387px;
         line-height: 45px;
         text-transform: uppercase;
         color: #82B428;
@@ -162,7 +168,7 @@
         font-family: 'Geometria';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 24rem;
         line-height: 120%;
         color: #2B2422;
         &.first {
@@ -173,9 +179,318 @@
     &__wrapper-right {
         flex: 0 1 635px;
     }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    
+    }
 }
-.wrapper {
-    display: flex;
-    flex-direction: row;
+///////////////////
+
+.more-better {
+    color: #fff;
+    margin-bottom: 110px;
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        color: #2DA3DC;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    
+    &__card {
+        &:hover  &-title {
+            transform: translateY(0);
+            
+        }
+        &:hover &-text {
+            opacity: 1;
+            transition-delay: .2s;
+        }
+        &:hover.item1{
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better1.png');  
+        }
+        &:hover.item2{
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better2.png');  
+        }
+        &:hover.item3{
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better3.png');  
+        }
+        &:hover.item4{
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better4.png');  
+        }
+        &:hover.item5{
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better5.png');  
+        }
+        &:hover.item6{
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better6.png');  
+        }
+
+
+        width: 350px;
+        height: 280px;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        background-blend-mode: multiply;
+        border-radius: 10px;
+        
+        
+    }
+    
+    &__card.item1 {
+        
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better1.png');
+        transition: all .3s;
+        
+    }
+    &__card.item2 {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better2.png');
+        
+    }
+    &__card.item3 {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better3.png');
+    }
+    &__card.item4 {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better4.png');
+    }
+    &__card.item5 {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better5.png');
+    }
+    &__card.item6 {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better6.png');
+    }
+
+    &__card-title {
+        font-size: 24rem;
+        margin: 0 28px ;
+        margin-bottom: 26px;
+        font-weight: 400;
+        line-height: 100%;
+        transform: translateY(136px);
+        transition: all .3s;
+       
+        
+    }
+    
+    &__card-text {
+        margin: 0 28px;
+        font-size: 14rem;
+        margin-bottom: 10px;
+        min-height: 134px;
+        font-weight: 500;
+        opacity: 0;
+        transition: all .5s;
+    }
+
 
 }
+
+
+///////////////////
+
+.for-life {
+    margin-bottom: 173px;
+    &__title {
+        margin-bottom: 60px;
+        
+    }
+    position: relative;
+    .swiper-pagination {
+        position: absolute;
+        z-index: 11;
+        
+    }
+    .swiper-pagination-bullet-active {
+        background: #2DA3DC;
+    }
+    .swiper-pagination-bullet {
+        margin-right: 18px !important;
+        width: 12px;
+        height: 12px;
+        transform: translateY(70px);
+        z-index: 11;
+    }
+
+
+    &__wrapper {
+        width: 1140px;
+        display: flex;
+        border: 1px solid #C5C5C5;
+        box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        overflow: hidden;
+        
+    }
+
+    &__img {
+        flex: 0 1 360px;
+        max-height: 547px;
+        object-fit: cover;
+
+    }
+
+    &__left-img {
+        width: 375px;
+        height: 284px;        
+    }
+    &__left-additional {
+        display: block;
+        text-align: center;
+    }
+
+    &__room {
+        flex: 1 0 680px;
+        
+        
+    }
+   
+    &__info {
+        display: flex;
+        margin-top: 70px;
+        
+    }
+
+    &__left-info {
+        flex: 0 1 375px;
+        margin-right: 39px;
+    }
+
+    &__right-info {
+        flex: 0 1 295px;
+        margin-bottom: 13px;
+    }
+
+    &__right-title {
+        font-size: 24px;
+        line-height: 30px;
+        color: #2B2422;
+        margin-bottom: 37px;
+    }
+    &__left-additional {
+        font-style: italic;
+        font-size: 17px;
+    }
+
+    &__right-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: #000000;
+        margin-bottom: 34px;
+    }
+
+    &__right-btn {
+        padding: 11px 24px;
+        background: linear-gradient(34.66deg, #82B428 16.88%, #C5D210 76%);
+    }
+    &__hr {
+        width: 90%;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    &__table {
+        display: flex;
+        justify-content: space-between;
+        max-width: 630px;
+        margin: 0 auto;
+    }
+    &__item {
+        font-size: 17px;
+        line-height: 23px;
+        color: #2B2422;
+    }
+    &__item > * {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 28px;
+        color: #2B2422;
+    }
+}
+
+
+///////////////////
+
+.advant {
+    margin-bottom: 21px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__card {
+        flex: 0 1 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 280px;
+    }
+    &__card.first {
+        background: url(/images/advant/photo1.png);
+
+    }
+    &__card.second {
+        background: url(/images/advant/photo2.png);
+
+    }
+    &__card.third {
+        background: url(/images/advant/photo3.png);
+
+    }
+
+
+    &__title {
+       padding: 77px 84px 31px 28px;
+       font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+        background: linear-gradient(180deg, rgba(100, 104, 101, 0) 16.67%, #646865 100%);
+        background-blend-mode: multiply;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+//////////////////////////
+
+
+
+.finishing {
+    &__wrapper {
+        background: url('/images/finishing.jpg');
+        height: 350px;
+        background-size: contain;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    &__inner {
+        margin-right: 59px;
+        margin-bottom: 45px;
+        flex: 0 1 284px;
+        
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #646865;
+        margin-bottom: 30px;
+    }
+    &__btn {
+        padding: 11px 14px;
+        background: linear-gradient(34.66deg, #82B428 16.88%, #C5D210 76%);
+    }
+}
+
+
+////////////////////////////
+
