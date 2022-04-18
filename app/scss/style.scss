@@ -650,8 +650,7 @@
         margin-bottom: 40px;
     }
 
-    &__text {
-    }
+    
 
     &__right {
         flex: 0 0 627px;
@@ -691,9 +690,7 @@
         flex: 0 1 411px;
     }
 
-    &__title {
-
-    }
+    
 
     &__text {
         font-weight: 400;
@@ -731,4 +728,12 @@
         background: linear-gradient(34.66deg, #82B428 16.88%, #C5D210 76%);
     }
     
+}
+////////////////
+
+
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
 }
