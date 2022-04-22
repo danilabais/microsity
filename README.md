@@ -1,3 +1,3 @@
 # microcity
 
-https://microcity-5b84c.web.app/
+https://danilabais.github.io/microsity/dist/
