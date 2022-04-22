@@ -10,9 +10,9 @@
 
 ///////////////////first-screen
 .first-screen {
-    background: url("/images/backgrounds/main.png");
+    background: url("../images/backgrounds/main.png");
     &.second {
-        background: url("/images/backgrounds/main2.png");
+        background: url("../images/backgrounds/main2.png");
     }
     background-size: cover;
     padding-top: 230px;
@@ -216,22 +216,22 @@
             transition-delay: .2s;
         }
         &:hover.item1{
-            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better1.png');  
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/backgrounds/better1.png');  
         }
         &:hover.item2{
-            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better2.png');  
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/backgrounds/better2.png');  
         }
         &:hover.item3{
-            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better3.png');  
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/backgrounds/better3.png');  
         }
         &:hover.item4{
-            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better4.png');  
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/backgrounds/better4.png');  
         }
         &:hover.item5{
-            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better5.png');  
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/backgrounds/better5.png');  
         }
         &:hover.item6{
-            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('/images/backgrounds/better6.png');  
+            background:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/backgrounds/better6.png');  
         }
 
 
@@ -248,25 +248,25 @@
     
     &__card.item1 {
         
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better1.png');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('../images/backgrounds/better1.png');
         transition: all .3s;
         
     }
     &__card.item2 {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better2.png');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('../images/backgrounds/better2.png');
         
     }
     &__card.item3 {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better3.png');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('../images/backgrounds/better3.png');
     }
     &__card.item4 {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better4.png');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('../images/backgrounds/better4.png');
     }
     &__card.item5 {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better5.png');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('../images/backgrounds/better5.png');
     }
     &__card.item6 {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('/images/backgrounds/better6.png');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),url('../images/backgrounds/better6.png');
     }
 
     &__card-title {
@@ -435,15 +435,15 @@
         height: 280px;
     }
     &__card.first {
-        background: url(/images/advant/photo1.png);
+        background: url(../images/advant/photo1.png);
 
     }
     &__card.second {
-        background: url(/images/advant/photo2.png);
+        background: url(../images/advant/photo2.png);
 
     }
     &__card.third {
-        background: url(/images/advant/photo3.png);
+        background: url(../images/advant/photo3.png);
 
     }
 
@@ -466,7 +466,7 @@
 .finishing {
     margin-bottom: 100px;
     &__wrapper {
-        background: url('/images/finishing.jpg');
+        background: url('../images/finishing.jpg');
         height: 350px;
         background-size: contain;
         display: flex;
@@ -533,31 +533,31 @@
         
     }
     &__card:nth-child(1) {
-        background: url('/images/details/photo1.png')
+        background: url('../images/details/photo1.png')
     }
     &__card:nth-child(2) {
-        background: url('/images/details/photo2.png')
+        background: url('../images/details/photo2.png')
     }
     &__card:nth-child(3) {
-        background: url('/images/details/photo3.png')
+        background: url('../images/details/photo3.png')
     }
     &__card:nth-child(4) {
-        background: url('/images/details/photo4.png')
+        background: url('../images/details/photo4.png')
     }
     &__card:nth-child(5) {
-        background: url('/images/details/photo5.png')
+        background: url('../images/details/photo5.png')
     }
     &__card:nth-child(6) {
-        background: url('/images/details/photo6.png')
+        background: url('../images/details/photo6.png')
     }
     &__card:nth-child(7) {
-        background: url('/images/details/photo7.png')
+        background: url('../images/details/photo7.png')
     }
     &__card:nth-child(8) {
-        background: url('/images/details/photo8.png')
+        background: url('../images/details/photo8.png')
     }
     &__card:nth-child(9) {
-        background: url('/images/details/photo9.png')
+        background: url('../images/details/photo9.png')
     }
 
     &__card:nth-child(6n+1) {
@@ -609,7 +609,7 @@
 //////////////
 
 .discounts {
-    background: url('/images/backgrounds/discounts.png');
+    background: url('../images/backgrounds/discounts.png');
     padding-top: 62px;
     background-repeat: no-repeat;
     margin-bottom: 100px;
@@ -659,7 +659,7 @@
 //////////////////
 
 .wanna-life {
-    background: url('/images/form.jpg');
+    background: url('../images/form.jpg');
     padding-top: 102px;
     position: relative;
     padding-bottom: 90px;
@@ -714,6 +714,7 @@
         border-radius: 50px;
         padding: 24px 29px 18px 29px;
         margin-bottom: 11px;
+        outline: none;
         &::placeholder {
             font-size: 26rem;
             color: #C4C4C4;
